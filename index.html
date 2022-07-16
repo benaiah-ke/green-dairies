@@ -31,21 +31,47 @@
             <a href="#">How it Works</a>
         </nav>
     </header>
-    <section id="input">
-        <h1>Enter Daily Production</h1>
-        <p>Enter the daily milk output per shade as indicated here. Click proceed to view reports.</p>
-        <form action="#">
-            <label>Shed A Production</label>
-            <input type="number" name="shed-a" placeholder="milk in litres">
-            <label>Shed B Production</label>
-            <input type="number" name="shed-a" placeholder="milk in litres">
-            <label>Shed C Production</label>
-            <input type="number" name="shed-a" placeholder="milk in litres">
-            <label>Shed D Production</label>
-            <input type="number" name="shed-a" placeholder="milk in litres">
-            <button>Proceed</button>
-            <button>Clear</button>
-        </form>
+    <section id="main">
+        <div id="input">
+            <h1>Enter Daily Production</h1>
+            <p>Enter the daily milk output per shade as indicated here. Click proceed to view reports.</p>
+            <form action="#">
+                <label>Shed A Production</label>
+                <input type="number" name="shed-a" placeholder="milk in litres">
+                <label>Shed B Production</label>
+                <input type="number" name="shed-a" placeholder="milk in litres">
+                <label>Shed C Production</label>
+                <input type="number" name="shed-a" placeholder="milk in litres">
+                <label>Shed D Production</label>
+                <input type="number" name="shed-a" placeholder="milk in litres">
+                <button>Proceed</button>
+                <button>Clear</button>
+            </form>
+        </div>
+        <div id="daily-report">
+            <h1>Daily Production & Income Report</h1>
+            <p>Calculated production and income for every shade shade and overally per day</p>
+            <div class="shed-report">
+                <h2>Shed A Daily Report</h2>
+                <p>The daily production for Shed A is <span>510 litres</span></p>
+                <p>The daily income from Shed A is <span>Ksh 200,000</span></p>
+            </div>
+            <div class="shed-report">
+                <h2>Shed B Daily Report</h2>
+                <p>The daily production for Shed B is <span>510 litres</span></p>
+                <p>The daily income from Shed B is <span>Ksh 200,000</span></p>
+            </div>
+            <div class="shed-report">
+                <h2>Shed C Daily Report</h2>
+                <p>The daily production for Shed C is <span>510 litres</span></p>
+                <p>The daily income from Shed C is <span>Ksh 200,000</span></p>
+            </div>
+            <div class="shed-report">
+                <h2>Shed D Daily Report</h2>
+                <p>The daily production for Shed D is <span>510 litres</span></p>
+                <p>The daily income from Shed D is <span>Ksh 200,000</span></p>
+            </div>
+        </div>
     </section>
     
     <!-- Custom Js Script -->
