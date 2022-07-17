@@ -3,6 +3,13 @@
     font-family: 'PT Sans', sans-serif;
 }
 
+html {
+    background-image: url(https://lh3.googleusercontent.com/VypsWxq3kS3g7SPuTabuz7DAaIlSTpOeaJ6xcSxkO9gwT9C1Dze3GsTCFyDFS9MOXeosDFJDs00yKd9ZcGgt3PpG2Af09QnBBkjw4NzxkIc=s750);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
 .month{
     margin-bottom: 40px;
 }
@@ -16,6 +23,8 @@ body {
     margin: auto;
     border-style: solid;
     border-color: #18407c;
+    background-color: white;
+    opacity: 0.9;
 }
 /* Header secton*/
 
@@ -63,4 +72,37 @@ nav a {
 
 nav a:hover {
     background-color: #18d26e;
+}
+
+/*Main section*/
+
+#main {
+    padding: 20px 30px 20px 30px;
+}
+
+.report-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.report-intro h1 {
+    font-family: 'Overpass', sans-serif;
+    color: #18d26e;
+    font-size: 30px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-bottom-color: #18407c;
+    border-top-color: #18407c;   
+}
+
+.report-intro p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #18407c;
+    margin-top: 10px;
 }
