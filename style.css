@@ -10,3 +10,20 @@
 .month:first-of-type{
     margin-top: 30px;
 }
+
+body {
+    width: 70%;
+    margin: auto;
+    border-style: solid;
+    border-color: #18407c;
+}
+/* Header secton*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-color: #18407c;
+    padding: 10px 30px 10px 30px;
+}
