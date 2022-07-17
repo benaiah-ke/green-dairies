@@ -27,3 +27,40 @@ header {
     border-bottom-color: #18407c;
     padding: 10px 30px 10px 30px;
 }
+
+header h1 {
+    color: #18d26e;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: #18407c;
+    border-bottom-color: #18407c;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    padding: 0px 20px 0px 20px;
+    font-size: 30px;
+}
+
+header h1:hover {
+    border-top-color: #18d26e;
+    border-bottom-color: #18d26e;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    background-color: #18407c;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background-color: #18d26e;
+}
