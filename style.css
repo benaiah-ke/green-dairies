@@ -170,7 +170,7 @@ form input, form input::placeholder, form input:focus {
     margin-bottom: 80px;
 }
 
-.shed-report {
+.shed-report, .year {
     background-color: #18407c;
     border-radius: 20px;
     border-style: solid;
@@ -189,14 +189,14 @@ form input, form input::placeholder, form input:focus {
     padding-bottom: 7px;
 }
 
-.shed-report p {
+.shed-report p, .year p {
     color: white;
     font-size: 15px;
     font-weight: 600;
     padding-bottom: 10px;
 }
 
-.shed-report span {
+.shed-report span, .year span {
     display: block;
     margin-top: 10px;
     padding: 10px;
@@ -247,5 +247,21 @@ form input, form input::placeholder, form input:focus {
     border-radius: 10px;
     border-width: 2px;
     border-color: #18d26e;
+}
+
+.year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.year span {
+    display: inline;
+    margin: 10px;
+}
+
+.year p {
+    font-size: 25px;
+    margin: 30px 0px 20px 40px;
 }
 
