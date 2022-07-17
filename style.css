@@ -19,6 +19,13 @@ body {
     background-color: white;
     opacity: 0.9;
 }
+
+@media screen and (max-width:1700px) {
+    body {
+        max-width: 100%;
+    }
+}
+
 /* Header secton*/
 
 header {
@@ -154,7 +161,7 @@ form input, form input::placeholder, form input:focus {
     border-color: #18d26e;
 }
 
-/* Daily reports section */
+/* Reports */
 
 .report-det {
     display: flex;
@@ -204,8 +211,7 @@ form input, form input::placeholder, form input:focus {
 
 #monthly-report-det {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    
+    grid-template-columns: repeat(3, 1fr);   
 }
 
 .shed-month {
@@ -220,6 +226,18 @@ form input, form input::placeholder, form input:focus {
 
 #month {
     margin: 50px;
+}
+
+@media screen and (max-width:1540px) {
+    #month {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:1320px) {
+    #month {
+        margin: 30px;
+    }
 }
 
 .month-totals span {
