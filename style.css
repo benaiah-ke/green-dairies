@@ -106,3 +106,31 @@ nav a:hover {
     color: #18407c;
     margin-top: 10px;
 }
+
+/* Input section */
+
+form {
+    background-color: #18407c;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    box-shadow: 5px 5px 5px #18d26e;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+form input, form input::placeholder, form input:focus {
+    background-color: none;
+    border-style: none !important;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #18407c;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
