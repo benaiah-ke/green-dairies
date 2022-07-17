@@ -1,4 +1,4 @@
-var price = 45;
+let price = 45;
 
 document.getElementById('input-form').addEventListener('submit', function(event){
     // Prevent the event from proceeding
