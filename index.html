@@ -35,7 +35,7 @@
         <div id="input">
             <h1>Enter Daily Production</h1>
             <p>Enter the daily milk output per shade as indicated here. Click proceed to view reports.</p>
-            <form>
+            <form action="#">
                 <label>Shed A Production</label>
                 <input type="number" id="shed-a" placeholder="milk in litres">
                 <label>Shed B Production</label>
@@ -44,7 +44,7 @@
                 <input type="number" id="shed-c" placeholder="milk in litres">
                 <label>Shed D Production</label>
                 <input type="number" id="shed-d" placeholder="milk in litres">
-                <button onclick="proceed()">Proceed</button>
+                <input type="submit">
                 <button>Clear</button>
             </form>
         </div>
@@ -56,8 +56,8 @@
             <div class="report-det">
                 <div class="shed-report">
                     <h2>Shed A Daily Report</h2>
-                    <p>The daily production for Shed A is <span>510 litres</span></p>
-                    <p>The daily income from Shed A is <span>Ksh 200,000</span></p>
+                    <p>The daily production for Shed A is <span id="a-daily-p">510 litres</span></p>
+                    <p>The daily income from Shed A is <span id="a-daily-i">Ksh 200,000</span></p>
                 </div>
                 <div class="shed-report">
                     <h2>Shed B Daily Report</h2>
