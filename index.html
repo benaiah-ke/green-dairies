@@ -35,7 +35,7 @@
         <div id="input">
             <h1>Enter Daily Production</h1>
             <p>Enter the daily milk output per shade as indicated here. Click proceed to view reports.</p>
-            <form action="#">
+            <form action="#" id="input-form">
                 <label>Shed A Production</label>
                 <input type="number" id="shed-a" placeholder="milk in litres">
                 <label>Shed B Production</label>
@@ -56,23 +56,23 @@
             <div class="report-det">
                 <div class="shed-report">
                     <h2>Shed A Daily Report</h2>
-                    <p>The daily production for Shed A is <span id="a-daily-p">510 litres</span></p>
-                    <p>The daily income from Shed A is <span id="a-daily-i">Ksh 200,000</span></p>
+                    <p>The daily production for Shed A is: <span id="shed_a_daily_production"></span></p>
+                    <p>The daily income from Shed A is: <span id="shed_a_daily_income"></span></p>
                 </div>
                 <div class="shed-report">
                     <h2>Shed B Daily Report</h2>
-                    <p>The daily production for Shed B is <span>510 litres</span></p>
-                    <p>The daily income from Shed B is <span>Ksh 200,000</span></p>
+                    <p>The daily production for Shed B is: <span id="shed_b_daily_production"></span></p>
+                    <p>The daily income from Shed B is: <span id="shed_b_daily_income"></span></p>
                 </div>
                 <div class="shed-report">
                     <h2>Shed C Daily Report</h2>
-                    <p>The daily production for Shed C is <span>510 litres</span></p>
-                    <p>The daily income from Shed C is <span>Ksh 200,000</span></p>
+                    <p>The daily production for Shed C is: <span id="shed_c_daily_production"></span></p>
+                    <p>The daily income from Shed C is: <span id="shed_c_daily_income"></span></p>
                 </div>
                 <div class="shed-report">
                     <h2>Shed D Daily Report</h2>
-                    <p>The daily production for Shed D is <span>510 litres</span></p>
-                    <p>The daily income from Shed D is <span>Ksh 200,000</span></p>
+                    <p>The daily production for Shed D is: <span id="shed_d_daily_production"></span></p>
+                    <p>The daily income from Shed D is: <span id="shed_d_daily_income"></span></p>
                 </div>
             </div>
         </div>
@@ -84,23 +84,23 @@
             <div class="report-det">
                 <div class="shed-report">
                     <h2>Shed A Weekly Report</h2>
-                    <p>The Weekly production for Shed A is <span>510 litres</span></p>
-                    <p>The Weekly income from Shed A is <span>Ksh 200,000</span></p>
+                    <p>The Weekly production for Shed A is: <span id="shed_a_weekly_production"></span></p>
+                    <p>The Weekly income from Shed A is: <span id="shed_a_weekly_income"></span></p>
                 </div>
                 <div class="shed-report">
                     <h2>Shed B Weekly Report</h2>
-                    <p>The weekly production for Shed B is <span>510 litres</span></p>
-                    <p>The weekly income from Shed B is <span>Ksh 200,000</span></p>
+                    <p>The weekly production for Shed B is: <span id="shed_b_weekly_production"></span></p>
+                    <p>The weekly income from Shed B is: <span id="shed_b_weekly_income"></span></p>
                 </div>
                 <div class="shed-report">
                     <h2>Shed C Weekly Report</h2>
-                    <p>The weekly production for Shed C is <span>510 litres</span></p>
-                    <p>The weekly income from Shed C is <span>Ksh 200,000</span></p>
+                    <p>The weekly production for Shed C is: <span id="shed_c_weekly_production"></span></p>
+                    <p>The weekly income from Shed C is: <span id="shed_c_weekly_income"></span></p>
                 </div>
                 <div class="shed-report">
                     <h2>Shed D Weekly Report</h2>
-                    <p>The weekly production for Shed D is <span>510 litres</span></p>
-                    <p>The weekly income from Shed D is <span>Ksh 200,000</span></p>
+                    <p>The weekly production for Shed D is: <span id="shed_d_weekly_production"></span></p>
+                    <p>The weekly income from Shed D is: <span id="shed_d_weekly_income"></span></p>
                 </div>
             </div>
         </div>
@@ -109,79 +109,8 @@
                 <h1>Monthly Production & Income Report</h1>
                 <p>Calculated production and income for every shade and overally per month</p>
             </div>
-            <div class="report-det-m">
-                <div class="month">
-                    <p>The production for January is:</p>
-                    <p>Shed A <span>2000 litres</span> Shed B <span>3000 litres</span> Shed C <span>2000 litres</span> Shed D <span>3000 litres</span></p>
-                    <p>Total Production is <span> 10,000 litres</span></p>
-                    <p>Total Income for January is <span>Ksh 500,000</span></p>
-                </div>
-                <div class="month">
-                    <p>The production for February is:</p>
-                    <p>Shed A <span>2000 litres</span> Shed B <span>3000 litres</span> Shed C <span>2000 litres</span> Shed D <span>3000 litres</span></p>
-                    <p>Total Production is <span> 10,000 litres</span></p>
-                    <p>Total Income for February is <span>Ksh 500,000</span></p>
-                </div>
-                <div class="month">
-                    <p>The production for March is:</p>
-                    <p>Shed A <span>2000 litres</span> Shed B <span>3000 litres</span> Shed C <span>2000 litres</span> Shed D <span>3000 litres</span></p>
-                    <p>Total Production is <span> 10,000 litres</span></p>
-                    <p>Total Income for March is <span>Ksh 500,000</span></p>
-                </div>
-                <div class="month">
-                    <p>The production for April is:</p>
-                    <p>Shed A <span>2000 litres</span> Shed B <span>3000 litres</span> Shed C <span>2000 litres</span> Shed D <span>3000 litres</span></p>
-                    <p>Total Production is <span> 10,000 litres</span></p>
-                    <p>Total Income for April is <span>Ksh 500,000</span></p>
-                </div>
-                <div class="month">
-                    <p>The production for May is:</p>
-                    <p>Shed A <span>2000 litres</span> Shed B <span>3000 litres</span> Shed C <span>2000 litres</span> Shed D <span>3000 litres</span></p>
-                    <p>Total Production is <span> 10,000 litres</span></p>
-                    <p>Total Income for May is <span>Ksh 500,000</span></p>
-                </div>
-                <div class="month">
-                    <p>The production for June is:</p>
-                    <p>Shed A <span>2000 litres</span> Shed B <span>3000 litres</span> Shed C <span>2000 litres</span> Shed D <span>3000 litres</span></p>
-                    <p>Total Production is <span> 10,000 litres</span></p>
-                    <p>Total Income for June is <span>Ksh 500,000</span></p>
-                </div>
-                <div class="month">
-                    <p>The production for July is:</p>
-                    <p>Shed A <span>2000 litres</span> Shed B <span>3000 litres</span> Shed C <span>2000 litres</span> Shed D <span>3000 litres</span></p>
-                    <p>Total Production is <span> 10,000 litres</span></p>
-                    <p>Total Income for July is <span>Ksh 500,000</span></p>
-                </div>
-                <div class="month">
-                    <p>The production for August is:</p>
-                    <p>Shed A <span>2000 litres</span> Shed B <span>3000 litres</span> Shed C <span>2000 litres</span> Shed D <span>3000 litres</span></p>
-                    <p>Total Production is <span> 10,000 litres</span></p>
-                    <p>Total Income for August is <span>Ksh 500,000</span></p>
-                </div>
-                <div class="month">
-                    <p>The production for September is:</p>
-                    <p>Shed A <span>2000 litres</span> Shed B <span>3000 litres</span> Shed C <span>2000 litres</span> Shed D <span>3000 litres</span></p>
-                    <p>Total Production is <span> 10,000 litres</span></p>
-                    <p>Total Income for September is <span>Ksh 500,000</span></p>
-                </div>
-                <div class="month">
-                    <p>The production for October is:</p>
-                    <p>Shed A <span>2000 litres</span> Shed B <span>3000 litres</span> Shed C <span>2000 litres</span> Shed D <span>3000 litres</span></p>
-                    <p>Total Production is <span> 10,000 litres</span></p>
-                    <p>Total Income for October is <span>Ksh 500,000</span></p>
-                </div>
-                <div class="month">
-                    <p>The production for November is:</p>
-                    <p>Shed A <span>2000 litres</span> Shed B <span>3000 litres</span> Shed C <span>2000 litres</span> Shed D <span>3000 litres</span></p>
-                    <p>Total Production is <span> 10,000 litres</span></p>
-                    <p>Total Income for November is <span>Ksh 500,000</span></p>
-                </div>
-                <div class="month">
-                    <p>The production for December is:</p>
-                    <p>Shed A <span>2000 litres</span> Shed B <span>3000 litres</span> Shed C <span>2000 litres</span> Shed D <span>3000 litres</span></p>
-                    <p>Total Production is <span> 10,000 litres</span></p>
-                    <p>Total Income for December is <span>Ksh 500,000</span></p>
-                </div>
+            <div class="report-det-m" id="monthly_report">
+                <!-- Monthly report will be appended here -->
             </div>
         </div>
         <div id="annual-report">
@@ -190,8 +119,8 @@
                 <p>Calculated total production and income for a year</p>
             </div>
             <div class="year">
-                <p>Your total annual production is <span>1,000,000 litres</span></p>
-                <p>Your total annual income is <span>Ksh 54,000,000</span></p>
+                <p>Your total annual production is: <span id="total_yearly_production"></span></p>
+                <p>Your total annual income is: <span id="total_yearly_income"></span></p>
             </div> 
         </div>
     </section>      

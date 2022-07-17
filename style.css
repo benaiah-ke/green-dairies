@@ -2,3 +2,11 @@
     font-family: 'Overpass', sans-serif;
     font-family: 'PT Sans', sans-serif;
 }
+
+.month{
+    margin-bottom: 40px;
+}
+
+.month:first-of-type{
+    margin-top: 30px;
+}
