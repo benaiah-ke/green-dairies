@@ -16,7 +16,6 @@ document.getElementById('input-form').addEventListener('submit', function(event)
         return; // Stop further execution
     }
 
-
     //Output daily production
     document.getElementById("shed_a_daily_production").innerText = shed_a_daily + " litres";
     document.getElementById("shed_b_daily_production").innerText = shed_b_daily + " litres";
