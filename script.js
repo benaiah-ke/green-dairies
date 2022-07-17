@@ -80,12 +80,16 @@ document.getElementById('input-form').addEventListener('submit', function(event)
 
         // Output the monthly production
         // Add to the existing innerHTML
-        document.getElementById('monthly_report').innerHTML += `
-            <div class="month">
+        document.getElementById('monthly-report-det').innerHTML += `
+            <div id="month" class="shed-report">
                 <p>The production for <strong>${month_names[i]}</strong> is:</p>
-                <p>Shed A <span>${shed_a_monthly} litres</span> Shed B <span>${shed_b_monthly} litres</span> Shed C <span>${shed_c_monthly} litres</span> Shed D <span>${shed_d_monthly} litres</span></p>
-                <p>Total Production for ${month_names[i]} is <span> ${total_monthly_production} litres</span></p>
-                <p>Total Income for ${month_names[i]} is <span>Ksh ${total_monthly_income}</span></p>
+                <div class="shed-month">
+                    <p>Shed A <span>${shed_a_monthly} litres</span></p><p>Shed B <span>${shed_b_monthly} litres</span></p><p>Shed C <span>${shed_c_monthly} litres</span></p><p>Shed D <span>${shed_d_monthly} litres</span></p>
+                </div>
+                <div class="month-totals">    
+                    <p>Total Production for ${month_names[i]} is<span> ${total_monthly_production} litres</span></p>
+                    <p>Total Income for ${month_names[i]} is <span>Ksh ${total_monthly_income}</span></p>
+                </div>
             </div>
         `;
     }

@@ -10,16 +10,9 @@ html {
     background-repeat: no-repeat;
     }
 
-.month{
-    margin-bottom: 40px;
-}
-
-.month:first-of-type{
-    margin-top: 30px;
-}
 
 body {
-    width: 70%;
+    max-width: 90%;
     margin: auto;
     border-style: solid;
     border-color: #18407c;
@@ -157,6 +150,83 @@ form input, form input::placeholder, form input:focus {
 .input-buttons input:hover, .input-buttons button:hover {
     background-color: white;
     border-style: solid;
+    border-width: 2px;
+    border-color: #18d26e;
+}
+
+/* Daily reports section */
+
+.report-det {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.shed-report {
+    background-color: #18407c;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #18d26e;
+    padding: 20px;
+}
+
+.shed-report h2 {
+    font-size: 18px;
+    width: fit-content;
+    color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #18d26e;
+    padding-bottom: 7px;
+}
+
+.shed-report p {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.shed-report span {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #18d26e;
+    color: #18407c;
+    max-width: max-content;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+#monthly-report-det {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.shed-month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shed-month p {
+    margin: 10px;
+}
+
+#month {
+    margin: 50px;
+}
+
+.month-totals span {
+    background-color: white;
+    color: #18407c;
+    border-style: solid;
+    border-radius: 10px;
     border-width: 2px;
     border-color: #18d26e;
 }
