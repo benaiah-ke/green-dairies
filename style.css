@@ -112,6 +112,7 @@ nav a:hover {
 form {
     background-color: #18407c;
     padding: 30px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
     justify-content: center;
@@ -124,7 +125,7 @@ form {
 
 form input, form input::placeholder, form input:focus {
     background-color: none;
-    border-style: none !important;
+    border-style: none;
     outline: none;
     font-size: 18px;
     font-weight: 500;
@@ -132,5 +133,31 @@ form input, form input::placeholder, form input:focus {
     padding: 10px;
     margin-top: 15px;
     border-radius: 10px;
+}
+
+.input-buttons {
+    align-self: top;
+}
+
+.input-buttons input, .input-buttons button {
+    background-color: #18d26e;
+    color: #18407c;
+    width: 100%;
+    align-self: top;
+    border-style: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+
+}
+
+.input-buttons input:hover, .input-buttons button:hover {
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #18d26e;
 }
 
