@@ -265,3 +265,11 @@ form input, form input::placeholder, form input:focus {
     margin: 30px 0px 20px 40px;
 }
 
+#report-total p {
+    font-size: 18px;
+}
+
+#report-total {
+    margin-bottom: 30px;
+}
+
