@@ -1,4 +1,5 @@
 let price = 45;
+let priceChange = 49.60;
 
 document.getElementById('input-form').addEventListener('submit', function(event){
     // Prevent the event from proceeding
@@ -9,6 +10,7 @@ document.getElementById('input-form').addEventListener('submit', function(event)
     var shed_b_daily = document.getElementById("shed-b").value;
     var shed_c_daily = document.getElementById("shed-c").value;
     var shed_d_daily = document.getElementById("shed-d").value;
+    var total_daily = parseInt(shed_a_daily) + parseInt(shed_b_daily) + parseInt(shed_c_daily) + parseInt(shed_d_daily);
 
     // Validate
     if(shed_a_daily == '' || shed_b_daily == '' || shed_c_daily == '' || shed_d_daily == ''){
@@ -21,12 +23,14 @@ document.getElementById('input-form').addEventListener('submit', function(event)
     document.getElementById("shed_b_daily_production").innerText = shed_b_daily + " litres";
     document.getElementById("shed_c_daily_production").innerText = shed_c_daily + " litres";
     document.getElementById("shed_d_daily_production").innerText = shed_d_daily + " litres";
+    document.getElementById("total_daily_production").innerText = total_daily + " litres";
 
     // Output daily income
     document.getElementById("shed_a_daily_income").innerText = "ksh " + (shed_a_daily * price);
     document.getElementById("shed_b_daily_income").innerText = "ksh " + (shed_b_daily * price);
     document.getElementById("shed_c_daily_income").innerText = "ksh " + (shed_c_daily * price);
     document.getElementById("shed_d_daily_income").innerText = "ksh " + (shed_d_daily * price);
+    document.getElementById("total_daily_income").innerText = "ksh " + (total_daily * price);
 
 
     //Output weekly production
@@ -34,12 +38,14 @@ document.getElementById('input-form').addEventListener('submit', function(event)
     document.getElementById("shed_b_weekly_production").innerText = (shed_b_daily * 7) + " litres";
     document.getElementById("shed_c_weekly_production").innerText = (shed_c_daily * 7) + " litres";
     document.getElementById("shed_d_weekly_production").innerText = (shed_d_daily * 7) + " litres";
+    document.getElementById("total_weekly_production").innerText = (total_daily * 7) + " litres";
 
     // Output weekly income
     document.getElementById("shed_a_weekly_income").innerText = "ksh " + (shed_a_daily * 7 * price);
     document.getElementById("shed_b_weekly_income").innerText = "ksh " + (shed_b_daily * 7 * price);
     document.getElementById("shed_c_weekly_income").innerText = "ksh " + (shed_c_daily * 7 * price);
     document.getElementById("shed_d_weekly_income").innerText = "ksh " + (shed_d_daily * 7 * price);
+    document.getElementById("total_weekly_income").innerText = "ksh " + (total_daily * 7 * price);
 
 
 
